@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fresh-100",
+    "name": "HAIRRY Fresh Shampoo 100ml",
+    "mood": "fresh",
+    "type": "shampoo",
+    "size": "100ml",
+    "price": 89,
+    "image": "images/fresh.jpg",
+    "description": "แชมพูกลิ่นสดชื่นสะอาด ให้ความรู้สึกเบาสบายตั้งแต่ครั้งแรกที่สระ ขนาดพกพา เหมาะสำหรับการเดินทางหรือทดลองใช้"
+  },
+  {
+    "id": "fresh-250",
+    "name": "HAIRRY Fresh Shampoo 250ml",
+    "mood": "fresh",
+    "type": "shampoo",
+    "size": "250ml",
+    "price": 199,
+    "image": "images/fresh.jpg",
+    "description": "แชมพูกลิ่นสดชื่นสะอาด ให้ความรู้สึกเบาสบายตั้งแต่ครั้งแรกที่สระ ขนาดมาตรฐานสำหรับใช้ประจำวัน"
+  },
+  {
+    "id": "fresh-500",
+    "name": "HAIRRY Fresh Shampoo 500ml",
+    "mood": "fresh",
+    "type": "shampoo",
+    "size": "500ml",
+    "price": 299,
+    "image": "images/fresh.jpg",
+    "description": "แชมพูกลิ่นสดชื่นสะอาด ให้ความรู้สึกเบาสบายตั้งแต่ครั้งแรกที่สระ ขนาดใหญ่คุ้มค่า เหมาะสำหรับใช้ในครอบครัวหรือเติมสต็อก"
+  },
+  {
+    "id": "sweet-100",
+    "name": "HAIRRY Sweet Shampoo 100ml",
+    "mood": "sweet",
+    "type": "shampoo",
+    "size": "100ml",
+    "price": 89,
+    "image": "images/sweet.jpg",
+    "description": "แชมพูกลิ่นหวานนุ่มนวล อบอุ่นและอ่อนโยน ติดผมอย่างพอดี ขนาดพกพา เหมาะสำหรับการเดินทางหรือทดลองใช้"
+  },
+  {
+    "id": "sweet-250",
+    "name": "HAIRRY Sweet Shampoo 250ml",
+    "mood": "sweet",
+    "type": "shampoo",
+    "size": "250ml",
+    "price": 199,
+    "image": "images/sweet.jpg",
+    "description": "แชมพูกลิ่นหวานนุ่มนวล อบอุ่นและอ่อนโยน ติดผมอย่างพอดี ขนาดมาตรฐานสำหรับใช้ประจำวัน"
+  },
+  {
+    "id": "sweet-500",
+    "name": "HAIRRY Sweet Shampoo 500ml",
+    "mood": "sweet",
+    "type": "shampoo",
+    "size": "500ml",
+    "price": 299,
+    "image": "images/sweet.jpg",
+    "description": "แชมพูกลิ่นหวานนุ่มนวล อบอุ่นและอ่อนโยน ติดผมอย่างพอดี ขนาดใหญ่คุ้มค่า เหมาะสำหรับใช้ในครอบครัวหรือเติมสต็อก"
+  },
+  {
+    "id": "romance-100",
+    "name": "HAIRRY Romance Shampoo 100ml",
+    "mood": "romance",
+    "type": "shampoo",
+    "size": "100ml",
+    "price": 89,
+    "image": "images/romance.jpg",
+    "description": "แชมพูกลิ่นดอกไม้โรแมนติก ละมุนและเป็นส่วนตัว ทิ้งกลิ่นหอมบางเบาไว้บนเส้นผม ขนาดพกพา เหมาะสำหรับการเดินทางหรือทดลองใช้"
+  },
+  {
+    "id": "romance-250",
+    "name": "HAIRRY Romance Shampoo 250ml",
+    "mood": "romance",
+    "type": "shampoo",
+    "size": "250ml",
+    "price": 199,
+    "image": "images/romance.jpg",
+    "description": "แชมพูกลิ่นดอกไม้โรแมนติก ละมุนและเป็นส่วนตัว ทิ้งกลิ่นหอมบางเบาไว้บนเส้นผม ขนาดมาตรฐานสำหรับใช้ประจำวัน"
+  },
+  {
+    "id": "romance-500",
+    "name": "HAIRRY Romance Shampoo 500ml",
+    "mood": "romance",
+    "type": "shampoo",
+    "size": "500ml",
+    "price": 299,
+    "image": "images/romance.jpg",
+    "description": "แชมพูกลิ่นดอกไม้โรแมนติก ละมุนและเป็นส่วนตัว ทิ้งกลิ่นหอมบางเบาไว้บนเส้นผม ขนาดใหญ่คุ้มค่า เหมาะสำหรับใช้ในครอบครัวหรือเติมสต็อก"
+  }
+]

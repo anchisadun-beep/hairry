@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HAIRRY — แชมพูสระผม 3 กลิ่นหอม</title>
+  <meta name="description" content="HAIRRY แชมพูสระผม 3 กลิ่นหอมที่เป็นเอกลักษณ์ Fresh, Sweet และ Romance">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* page-specific touches (theme tokens come from style.css) */
+    .hero {
+      min-height: calc(100svh - 5.5rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-6) 0;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 3.6vw + 0.8rem, 3.4rem);
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      max-width: 22em;
+      margin: 0 auto var(--space-4);
+    }
+
+    .hero .rule {
+      margin-bottom: var(--space-4);
+    }
+
+    .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+
+    .mood-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--white);       /* neutral card, mood color only as a small touch */
+      border: 1px solid var(--line-faint);
+      border-radius: var(--radius);
+      padding: var(--space-4) var(--space-3);
+      transition: border-color var(--ease);
+    }
+
+    .mood-card:hover {
+      border-color: var(--line);
+    }
+
+    .mood-card .mood-dot {
+      width: 10px;
+      height: 10px;
+      margin-bottom: var(--space-3);
+    }
+
+    .mood-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+    }
+
+    .mood-card__th {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+
+    .mood-card p {
+      flex: 1;
+      font-size: 0.95rem;
+    }
+
+    .mood-card__link {
+      font-size: 0.9rem;
+      color: var(--accent-deep);
+      padding-top: var(--space-2);
+      border-top: 1px solid var(--line-faint);
+    }
+
+    @media (max-width: 860px) {
+      .mood-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">HAIRRY</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>HAIRRY เติมเต็มความสดชื่นให้เส้นผม ด้วยแชมพู 3 กลิ่นหอมที่เป็นเอกลักษณ์ ให้คุณมั่นใจและมีเสน่ห์ในทุกวัน</h1>
+        <hr class="rule">
+        <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <section class="section section--white" id="scents">
+      <div class="container">
+        <div class="section__head">
+          <h2>เลือกกลิ่นที่ใช่สำหรับคุณ</h2>
+          <hr class="rule">
+          <p>แชมพู 3 กลิ่น ให้เลือกในขนาด 100ml, 250ml และ 500ml</p>
+        </div>
+
+        <div class="mood-grid">
+          <a class="mood-card" data-mood="fresh" href="product.html?mood=fresh">
+            <span class="mood-dot" aria-hidden="true"></span>
+            <h3>Fresh</h3>
+            <span class="mood-line"></span>
+            <span class="mood-card__th">สดชื่น</span>
+            <p>กลิ่นหอมสะอาด สดชื่น โปร่งสบาย ให้ความรู้สึกกระปรี้กระเปร่าเหมือนเพิ่งสระผมใหม่ ๆ เหมาะสำหรับคนที่ชอบความสดชื่นในทุกวัน</p>
+            <span class="mood-card__link">ดูสินค้ากลิ่น Fresh</span>
+          </a>
+
+          <a class="mood-card" data-mood="sweet" href="product.html?mood=sweet">
+            <span class="mood-dot" aria-hidden="true"></span>
+            <h3>Sweet</h3>
+            <span class="mood-line"></span>
+            <span class="mood-card__th">หวานละมุน</span>
+            <p>กลิ่นหอมหวานอ่อน ๆ นุ่มนวลและอบอุ่น ให้ความรู้สึกอ่อนโยน น่ารัก และสบายใจ เหมาะสำหรับคนที่ชอบกลิ่นหอมละมุน</p>
+            <span class="mood-card__link">ดูสินค้ากลิ่น Sweet</span>
+          </a>
+
+          <a class="mood-card" data-mood="romance" href="product.html?mood=romance">
+            <span class="mood-dot" aria-hidden="true"></span>
+            <h3>Romance</h3>
+            <span class="mood-line"></span>
+            <span class="mood-card__th">โรแมนติก</span>
+            <p>กลิ่นหอมหวานมีเสน่ห์ อบอุ่นและน่าหลงใหล ช่วยเพิ่มความรู้สึกพิเศษและน่าจดจำ เหมาะสำหรับคนที่ชอบกลิ่นหอมที่มีเอกลักษณ์</p>
+            <span class="mood-card__link">ดูสินค้ากลิ่น Romance</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand">HAIRRY</div>
+      <hr class="rule">
+      <p>&copy; 2026 HAIRRY. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

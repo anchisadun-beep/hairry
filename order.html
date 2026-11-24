@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — HAIRRY</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-title {
+      padding: var(--space-6) 0 var(--space-4);
+      text-align: center;
+    }
+
+    .page-title h1 {
+      font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    }
+
+    .page-title p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .order-panel {
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--white);
+      border: 1px solid var(--line-faint);
+      border-radius: var(--radius);
+      padding: var(--space-4);
+    }
+
+    .order-actions {
+      margin-top: var(--space-4);
+      text-align: center;
+    }
+
+    .order-back {
+      display: inline-block;
+      margin-top: var(--space-3);
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      border-bottom: 1px solid var(--line-faint);
+      transition: color var(--ease), border-color var(--ease);
+    }
+
+    .order-back:hover {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    @media (max-width: 640px) {
+      .page-title { padding: var(--space-5) 0 var(--space-3); }
+      .order-panel { padding: var(--space-3); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">HAIRRY</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <div class="container">
+        <h1>สั่งซื้อสินค้า</h1>
+        <hr class="rule">
+        <p>กรอกข้อมูลสำหรับติดต่อกลับ เราจะยืนยันคำสั่งซื้อกับคุณโดยเร็วที่สุด</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: var(--space-4);">
+      <div class="container">
+        <div class="order-panel">
+          <form id="orderForm">
+            <div class="form-field">
+              <label for="customerName">ชื่อลูกค้า</label>
+              <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="contact">เบอร์โทร / Line</label>
+              <input type="text" id="contact" name="contact" autocomplete="tel" required>
+            </div>
+
+            <div class="form-field">
+              <label for="items">รายการสินค้า</label>
+              <input type="text" id="items" name="items" required>
+            </div>
+
+            <div class="form-field">
+              <label for="total">จำนวนเงินรวม (บาท)</label>
+              <input type="text" id="total" name="total" inputmode="numeric" required>
+            </div>
+
+            <div class="form-field">
+              <label for="note">หมายเหตุ</label>
+              <textarea id="note" name="note"></textarea>
+            </div>
+
+            <div class="order-actions">
+              <button type="submit" class="btn btn--accent">ยืนยันสั่งซื้อ</button>
+              <br>
+              <a class="order-back" href="product.html">กลับไปเลือกสินค้า</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand">HAIRRY</div>
+      <hr class="rule">
+      <p>&copy; 2026 HAIRRY. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด — HAIRRY</title>
+  <meta name="description" content="แชมพู HAIRRY ทั้ง 3 กลิ่น Fresh, Sweet และ Romance ในขนาด 100ml, 250ml และ 500ml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* page-specific touches (theme tokens come from style.css) */
+    .page-title {
+      padding: var(--space-6) 0 var(--space-4);
+      text-align: center;
+    }
+
+    .page-title h1 {
+      font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    }
+
+    .page-title p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-5);
+    }
+
+    @media (max-width: 640px) {
+      .page-title { padding: var(--space-5) 0 var(--space-3); }
+      #filter-bar .btn { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">HAIRRY</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html" aria-current="page">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <div class="container">
+        <h1>สินค้าทั้งหมด</h1>
+        <hr class="rule">
+        <p>แชมพูสระผม 3 กลิ่น ในขนาด 100ml, 250ml และ 500ml</p>
+      </div>
+    </section>
+
+    <section class="section section--white" style="padding-top: var(--space-5);">
+      <div class="container">
+        <div id="filter-bar" role="group" aria-label="กรองตามกลิ่น"></div>
+        <div id="product-list" class="product-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand">HAIRRY</div>
+      <hr class="rule">
+      <p>&copy; 2026 HAIRRY. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
